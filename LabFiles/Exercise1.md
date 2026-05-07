@@ -48,179 +48,180 @@ Safe Travels エージェントは、従業員の旅行関連の質問、ポリ�
 
       ![](../media/cor-g-g1.png)
 
-1. In the **Import an Excel or .CSV file** pane, ensure the table is included, and then click **Import**.
+1. **Import an Excel or .CSV file** ペインでテーブルが含まれていることを確認し、**Import** をクリックします。
 
    ![](../media/saf-tra-cor-v2-g3.png)
 
-1. On the table mapping screen, click **Save and exit**.
+1. テーブル マッピング画面で **Save and exit** をクリックします。
 
    ![](../media/saf-tra-cor-v2-g4.png)
 
-1. In the **Done working?** dialog, click **Save and exit**.
+1. **Done working?** ダイアログで **Save and exit** をクリックします。
 
    ![](../media/saf-tra-cor-v2-g5.png)
 
-1. After provisioning completes, open **Tables (1)** and confirm the **Employee (2)** table is listed; note the logical **prefix (3)** which uniquely identifies the table for future automation (not used further in this lab).
+1. プロビジョニングが完了したら、**Tables (1)** を開き、**Employee (2)** テーブルが一覧に表示されていることを確認します。将来の自動化でテーブルを一意に識別する論理的な **prefix (3)** に注意してください（このラボではこれ以上使用しません）。
 
    ![](../media/ex1-travel-g4.png)
 
-   > **Tip:** If the **Employee** table isn't visible, verify you've switched to **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>'s Environment**.
+   > **Tip:** **Employee** テーブルが表示されない場合は、**ODL_User <inject key="Deployment ID" enableCopy="false"></inject>'s Environment** に切り替えていることを確認してください。
 
-1. Navigate to **Microsoft Copilot Studio** by opening a new browser tab and using the link below:
+1. 新しいブラウザー タブを開き、次のリンクを使用して **Microsoft Copilot Studio** に移動します:
 
    ```
    https://copilotstudio.microsoft.com
    ```
 
-1. On the **Welcome to Microsoft Copilot Studio** screen, keep the default **country/region** selection and click **Get Started** to continue.
+1. **Welcome to Microsoft Copilot Studio** 画面では、デフォルトの **country/region** を維持し、**Get Started** をクリックして続行します。
 
    ![](../media/gs-travel-g2.png)
 
-1. If the **Welcome to Copilot Studio!** pop-up appears, click **Skip** to continue to the main dashboard.
+1. **Welcome to Copilot Studio!** ポップアップが表示された場合は、**Skip** をクリックしてメイン ダッシュボードに進みます。
 
    ![](../media/gs-travel-g3.png)
 
-1. In Copilot Studio, open the environment picker **(1)**, expand **Supported environments (2)**, and select **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>'s Environment (3)** to switch.
+1. Copilot Studio で環境ピッカー **(1)** を開き、**Supported environments (2)** を展開し、**ODL_User <inject key="Deployment ID" enableCopy="false"></inject>'s Environment (3)** を選択して切り替えます。
 
    ![](../media/ex1-travel-g6.png)
 
-   > If you are not able to see the environment under **Supported environments**, please refresh or log in once again by logging out.
+   > **Supported environments** に環境が表示されない場合は、更新するか、再度ログアウトしてログインしてください。
 
-## Task 2: Create Safe Travels & Leave Manager Agents
+## タスク 2: Safe Travels & Leave Manager エージェントを作成する
 
-In this task, you will create two AI agents: the **Safe Travels Agent** to assist with travel-related queries and the **Leave Manager Agent** to manage employee leave information and approvals. This helps you understand how to quickly build and customize multiple agents for different business scenarios.
+このタスクでは、旅行関連のクエリを支援する **Safe Travels Agent** と、従業員の休暇情報を管理し承認する **Leave Manager Agent** の 2 つの AI エージェントを作成します。これにより、異なるビジネス シナリオで複数のエージェントを迅速に構築およびカスタマイズする方法を理解できます。
 
-1. In Copilot Studio, click **Agents (1)** and select the **Safe Travels (2)** template card.
+1. Copilot Studio で **Agents (1)** をクリックし、**Safe Travels (2)** テンプレート カードを選択します。
 
    ![](../media/sfimg1.png)
 
-   > **Note:** If the template isn’t visible, use the search box.
+   > **注意:** テンプレートが表示されない場合は、検索ボックスを使用してください。
    
-1. In the next pane, enter the following details in **Name (1)** and **Description (2)** fields, and then click **Create (3)**.
+1. 次のペインで **Name (1)** および **Description (2)** フィールドに次の詳細を入力し、**Create (3)** をクリックします。
 
    | Key | Value |
    |-----|-------|
    | Name | `Safe Travels Agent` |
-   | Description | `A travel assistant agent that helps employees with travel planning, policies, and guidance` |
+   | Description | `従業員の旅行計画、ポリシー、およびガイダンスを支援する旅行アシスタント エージェント` |
 
    ![](../media/ex1-travel-g8.png)
 
-1. After clicking **Create**, verify the green success banner **"Your agent has been provisioned."** appears and the **Overview** tab loads.
+1. **Create** をクリックした後、緑色の成功バナー **"Your agent has been provisioned."** が表示され、**Overview** タブが読み込まれることを確認します。
 
    ![](../media/saf-tra-cor-v2-g6.png)
 
-   > **Template Benefits:** Safe Travels ships with pre-configured travel flows and knowledge, reducing setup time.
+   > **Template Benefits:** Safe Travels は事前構成された旅行フローと知識を提供し、セットアップ時間を短縮します。
 
-1. On **Overview (1)** click **+ Add knowledge (2)** to begin attaching internal travel policy content.
+1. **Overview (1)** で **+ Add knowledge (2)** をクリックして、内部旅行ポリシー コンテンツの添付を開始します。
 
    ![](../media/ex1-travel-g10.png)
 
-   > **Note:** Adding knowledge sources improves grounded responses; keep policy files updated for accuracy.
+   > **注意:** ナレッジ ソースを追加すると、根拠のある応答が改善されます。ポリシー ファイルを最新の状態に保ってください。
 
-1. On the **Add knowledge** screen, click **select to browse** to upload a knowledge file.  
+1. **Add knowledge** 画面で **select to browse** をクリックしてナレッジ ファイルをアップロードします。  
 
    ![](../media/cor-g-g3.png)
 
-1. In the file picker window, navigate to the folder **C:\datasets\Safe-Travels-Agent-Automate (1)**, select the **Travel Policy (2)** Word document file, and then click **Open (3)**.
+1. ファイル ピッカー ウィンドウでフォルダー **C:\datasets\Safe-Travels-Agent-Automate (1)** に移動し、**Travel Policy (2)** Word 文書ファイルを選択して **Open (3)** をクリックします。
 
    ![](../media/cor-g-g4.png)
 
-1. After the file is uploaded successfully, click **Add to agent** to include the document as a knowledge source for your agent.
+1. ファイルが正常にアップロードされたら、**Add to agent** をクリックしてドキュメントをエージェントのナレッジ ソースとして含めます。
 
       ![](../media/ex1-travel-g11.png)
 
-1. The system will process your agent creation. **Provisioning may take 10–15 minutes, please proceed to the next step while it completes**.
+1. システムがエージェント作成を処理します。**プロビジョニングには 10–15 分かかる場合があります。完了するまで次のステップに進んでください**。
 
    ![](../media/ex1-travel-g12.png)
 
    ![](../media/ex1-travel-g13.png)
 
-1. Navigate to **Copilot Studio**, click **Agents (1)** and then select **+ Create a Blank Agent (2)** to create the specialized Leave Manager agent.
+1. **Copilot Studio** に移動し、**Agents (1)** をクリックしてから **+ Create a Blank Agent (2)** を選択して、専門的な Leave Manager エージェントを作成します。
 
    ![](../media/saf-tra-cor-v2-g7.png)
 
-   > **Note:** The Copilot Studio UI may change over time; if prompted for the agent name, enter the following:
+   > **注意:** Copilot Studio UI は時間の経過とともに変更される可能性があります。エージェント名の入力を求められた場合は、次のように入力してください:
 
    > ```
    > Leave Manager Agent
    > ```
 
-1. Wait till the agent provisioning completes, click on **Edit** to configure the agent details.
+1. エージェントのプロビジョニングが完了するまで待機し、**Edit** をクリックしてエージェントの詳細を設定します。
 
       ![](../media/sfimg3.png)
 
-      > **Agent Specialization:** Creating domain-specific agents allows for better accuracy, focused training, and more relevant responses for specific business functions.
+      > **Agent Specialization:** ドメイン固有のエージェントを作成することで、より正確なトレーニングと特定のビジネス機能に関連する応答が可能になります。
 
-1. In the next pane, enter the following details in **Name (1)** and **Description (2)** fields, and then select **Save (3)**.
+1. 次のペインで **Name (1)** および **Description (2)** フィールドに次の詳細を入力し、**Save (3)** を選択します。
 
    | Key | Value |
    |-----|-------|
    | Name | `Leave Manager Agent` |
-   | Description | `This agent is to track the leaves of all the employees, their leave balance and leave history to approve or reject any new leave requests.` |
+   | Description | `すべての従業員の休暇を追跡し、休暇残高と休暇履歴を管理して、新しい休暇リクエストを承認または拒否します。` |
 
    ![](../media/saf-tra-cor-v2-g10.png)
 
-1. Once saved, scroll down and click on **Edit** on **Instructions** card.
+1. 保存したら、下にスクロールして **Instructions** カードの **Edit** をクリックします。
 
    ![](../media/saf-tra-cor-v2-g11.png)
 
-1. Configure the following instruction and click on **Save** once after adding.
+1. 次の指示を設定し、追加したら **Save** をクリックします。
 
    | Key | Value |
    |-----|-------|
-   | Instructions | `Track the leaves of employees. Track their leave balance. Apply/Reject leaves based on their balance.` |
+   | Instructions | `従業員の休暇を追跡します。休暇残高を追跡します。残高に基づいて休暇を適用/拒否します。` |
 
    ![](../media/saf-tra-cor-v2-g12.png)
 
-1. From the **Overview (1)** tab and click **Add knowledge (2)** to include organizational data sources that will enhance your agent's leave management capabilities.
+1. **Overview (1)** タブから **Add knowledge (2)** をクリックして、エージェントの休暇管理機能を強化する組織データ ソースを含めます。
 
    ![](../media/ex2-travel-g70.png)
 
-1. Click **select to browse** to upload the leave management documentation that will serve as the knowledge foundation for your agent.
+1. **select to browse** をクリックして、エージェントのナレッジ基盤として機能する休暇管理ドキュメントをアップロードします。
 
    ![](../media/ex2-travel-g71.png)
 
-1. In the file picker window, navigate to the folder **C:\datasets\Safe-Travels-Agent-Automate (1)**, select the files **Leave balance Tracker.xlsx (2)**, and then click **Open (3)**.
+1. ファイル ピッカー ウィンドウでフォルダー **C:\datasets\Safe-Travels-Agent-Automate (1)** に移動し、ファイル **Leave balance Tracker.xlsx (2)** を選択して **Open (3)** をクリックします。
 
    ![](../media/cor-g-g7.png)
 
-1. Upload the required leave policy and tracking files, then click **Add to agent** to integrate them as authoritative knowledge sources.
+1. 必要な休暇ポリシーおよび追跡ファイルをアップロードし、**Add to agent** をクリックして信頼できるナレッジ ソースとして統合します。
 
    ![](../media/saf-tra-cor-v2-g13.png)
 
-1. Verify that all uploaded knowledge sources display **Ready** status, confirming successful integration and availability for agent responses.
+1. アップロードされたすべてのナレッジ ソースが **Ready** ステータスを表示することを確認し、成功した統合とエージェント応答の可用性を確認します。
 
    ![](../media/cor-g-g10.png)
 
    ![](../media/cor-g-g24.png)
 
-   > **Note:** It may take 10–15 minutes for all knowledge sources to show the **Ready** status. You can proceed with the next task while the processing completes.
+   > **注意:** すべてのナレッジ ソースが **Ready** ステータスを表示するまでに 10–15 分かかる場合があります。処理が完了するまで次のタスクに進むことができます。
 
-   > **Knowledge Integration:** Successfully uploaded knowledge sources enable your agent to provide accurate, policy-compliant responses based on your organization's actual leave management data.
+   > **Knowledge Integration:** 正常にアップロードされたナレッジ ソースにより、エージェントは組織の実際の休暇管理データに基づいて正確でポリシー準拠の応答を提供できます。
 
-1. Please follow the same steps and upload **C:\datasets\Safe-Travels-Agent-Automate\Leave Policy** document.
+1. 同じ手順に従って **C:\datasets\Safe-Travels-Agent-Automate\Leave Policy** ドキュメントをアップロードしてください。
 
-## Task 3: Test and Validate Agent Functionality
 
-In this task, you'll test your Safe Travels agent to validate its functionality and responses to travel-related queries.
+## タスク 3: エージェントの機能をテストして検証する
 
-1. From the left navigation menu, click **Agents (1)**, and then select **Safe Travels Agent (2)** from the list to open it.
+このタスクでは、Safe Travels エージェントをテストして、その機能と旅行関連のクエリに対する応答を検証します。
+
+1. 左ナビゲーション メニューから **Agents (1)** をクリックし、一覧から **Safe Travels Agent (2)** を選択して開きます。
 
    ![](../media/saf-tra-cor-v2-g14.png)
 
-1. Verify that the uploaded knowledge source shows the **Ready** status as highlighted.
+1. アップロードされたナレッジ ソースが強調表示された **Ready** ステータスを表示することを確認します。
 
    ![](../media/ex1-travel-g13.png)
 
-   > **Note:** If the status is not yet **Ready**, you can continue with the next steps. However, the agent's responses may not reflect the latest data until the knowledge source is fully processed.
+   > **注意:** ステータスがまだ **Ready** でない場合は、次のステップに進むことができます。ただし、ナレッジ ソースが完全に処理されるまで、エージェントの応答に最新のデータが反映されない可能性があります。
 
-   > **Note:** It is recommended that you proceed to the next tasks and perform them. Once the knowledge source is fully processed, you can return later to retest the agent for improved and accurate responses during future interactions.
+   > **注意:** 次のタスクに進むことを推奨します。ナレッジ ソースが完全に処理されたら、後で戻ってエージェントを再テストし、改善された正確な応答を確認してください。
 
-1. Click **Test** to open the test panel and verify your agent’s responses.
+1. **Test** をクリックしてテスト パネルを開き、エージェントの応答を検証します。
 
    ![](../media/ex1-travel-g14.png)
 
-1. In the test chat, enter the following **prompt (1)** and then select **Send (2)**.
+1. テスト チャットで次の **prompt (1)** を入力し、**Send (2)** を選択します。
 
    ```
    How to apply for passport?
@@ -228,122 +229,124 @@ In this task, you'll test your Safe Travels agent to validate its functionality 
 
    ![](../media/ex1-travel-g16.png)
 
-1. Verify that the **response** generated by the agent is as expected.
+1. エージェントが生成した **response** が期待どおりであることを確認します。
    
    ![](../media/ex1-travel-g17.png)
 
-   > **Note:** The output may vary if the knowledge source (Word file) is still processing. This is expected behavior. You can continue with the next task you’ll be interacting with the agent again in the upcoming tasks once the knowledge source is fully ready.
+   > **注意:** ナレッジ ソース (Word ファイル) がまだ処理中の場合、出力が異なる可能性があります。これは予想される動作です。ナレッジ ソースが完全に準備されたら、次のタスクでエージェントと再度対話できます。
 
-1. In the test chat, enter the following **prompt (1)** and then select **Send (2)**.
+1. テスト チャットで次の **prompt (1)** を入力し、**Send (2)** を選択します。
 
    ```
    What is our company travel policy?
    ```
 
-1. Verify that the **response** generated by the agent is as expected.
+1. エージェントが生成した **response** が期待どおりであることを確認します。
 
    ![](../media/ex1-travel-g18.png)
    
-1. Continue testing with additional travel scenarios to ensure the agent responds appropriately to various travel-related questions.
+1. さまざまな旅行シナリオで追加のテストを続行し、エージェントがさまざまな旅行関連の質問に適切に応答することを確認します。
 
-   > **Knowledge Integration:** The agent leverages its built-in travel knowledge to provide helpful responses across various travel scenarios.
+   > **Knowledge Integration:** エージェントは組み込みの旅行知識を活用して、さまざまな旅行シナリオで役立つ応答を提供します。
 
-## Task 4: Publish and Deploy Agent to Microsoft Teams
 
-In this task, you will publish your Safe Travels agent and deploy it to Microsoft Teams, making it accessible to your organization's employees.
+## タスク 4: Microsoft Teams にエージェントを公開して展開する
 
-1. After testing, click the **Publish** button in the top-right corner of the agent interface to begin the publishing process.
+このタスクでは、Safe Travels エージェントを公開し、Microsoft Teams に展開して、組織の従業員がアクセスできるようにします。
+
+1. テスト後、エージェント インターフェイスの右上隅にある **Publish** ボタンをクリックして公開プロセスを開始します。
 
    ![](../media/ex1-travel-g21.png)
 
-1. In the publish dialog, review the publishing details and click **Publish** to confirm and publish your agent.
+1. 公開ダイアログで公開の詳細を確認し、**Publish** をクリックしてエージェントを公開します。
 
    ![](../media/sfimg8.png)
 
-   > **Publishing Process:** The agent will be packaged and made available for channel deployment. This process may take a few moments to complete.
+   > **Publishing Process:** エージェントがパッケージ化され、チャネル展開で利用可能になります。このプロセスは少し時間がかかる場合があります。
 
-1. Open a new browser tab and navigate to Microsoft Teams using the link below:
+1. 新しいブラウザー タブを開き、次のリンクを使用して Microsoft Teams に移動します:
 
    ```
    https://teams.microsoft.com/v2/
    ``` 
 
-1. If prompted to sign in, enter your **email address (1)** and click **Next (2)**.
+1. サインインを求められた場合は、**email address (1)** を入力し、**Next (2)** をクリックします。
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/ex1-travel-g24.png)
 
-1. Enter the **Temporary Access Pass (1)** and click **Sign in (2)**.
+1. **Temporary Access Pass (1)** を入力し、**Sign in (2)** をクリックします。
 
    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/ex1-travel-g25.png)
 
-1. If you see a "Get to know Teams" welcome screen, click **Get Started** to proceed.
+1. "Get to know Teams" ウェルカム画面が表示された場合は、**Get Started** をクリックして続行します。
 
    ![](../media/ex1-travel-g22.png)
 
-1. Once published successfully, navigate to the **Channels** section to configure deployment channels for your agent.
+1. 公開が正常に完了したら、**Channels** セクションに移動してエージェントの展開チャネルを設定します。
 
    ![](../media/ex1-travel-g28.png)
 
-1. In the Channels interface, you'll see available deployment options. Select **Microsoft Teams** to deploy your agent to Teams.
+1. Channels インターフェイスで利用可能な展開オプションが表示されます。**Microsoft Teams** を選択してエージェントを Teams に展開します。
 
    ![](../media/ex1-travel-g29.png)
 
-   > **Channel Benefits:** Deploying to Microsoft Teams provides users access through their familiar collaboration environment, increasing adoption and usage.
+   > **Channel Benefits:** Microsoft Teams に展開することで、ユーザーは使い慣れたコラボレーション環境を通じてアクセスでき、採用と使用が向上します。
 
-1. In the **Teams and Microsoft 365 Copilot** window, select the checkbox **Make agent available in Microsoft 365 Copilot (1)**, and then click **Add channel (2)**.
+1. **Teams and Microsoft 365 Copilot** ウィンドウでチェックボックス **Make agent available in Microsoft 365 Copilot (1)** を選択し、**Add channel (2)** をクリックします。
 
    ![](../media/ex1-travel-g30.png)
 
-1. Once the channel is added successfully, A dialog to publish will be shown. Please click on **Publish**.
+1. チャネルが正常に追加されたら、公開ダイアログが表示されます。**Publish** をクリックしてください。
 
    ![](../media/sfimg8.png)
 
-1. Once published, select the **See agent in Teams** option to add the agent in Teams.
+1. 公開されたら、**See agent in Teams** オプションを選択して Teams にエージェントを追加します。
 
    ![](../media/cor2-gs-g2.png)
 
-1. If prompted to download the Teams desktop app, click **Use the web app instead** to continue using Teams in your browser.
+1. Teams デスクトップ アプリのダウンロードを求められた場合は、**Use the web app instead** をクリックしてブラウザーで Teams を続行します。
 
    ![](../media/ex1-travel-g34.png)
 
-1. In the Safe Travels Agent dialog, review the agent information and click **Add** to install the agent in your Teams environment.
+1. Safe Travels Agent ダイアログでエージェント情報を確認し、**Add** をクリックして Teams 環境にエージェントをインストールします。
 
    ![](../media/ex1-travel-g35.png)
 
-1. After successful installation, you'll see a confirmation message. Click **Open** to start using your Safe Travels Agent immediately.
+1. インストールが正常に完了したら、確認メッセージが表示されます。**Open** をクリックして Safe Travels Agent をすぐに使用を開始します。
 
    ![](../media/ex1-travel-g36.png)
 
-1. The Safe Travels Agent chat interface will open. Type your first message in the text box (1) and click the **Send** button (2) to test the agent.
+1. Safe Travels Agent チャット インターフェイスが開きます。テキスト ボックス (1) に最初のメッセージを入力し、**Send** ボタン (2) をクリックしてエージェントをテストします。
 
    ![](../media/ex1-travel-g39.png)
 
-1. The **Safe Travels Agent** chat interface will open. Type your first message in the text box **(1)** and click the **Send** button **(2)**.
+1. **Safe Travels Agent** チャット インターフェイスが開きます。テキスト ボックス **(1)** に最初のメッセージを入力し、**Send** ボタン **(2)** をクリックします。
 
    ![](../media/ex1-travel-g40.png)
 
-1. To start interacting with the agent. Ask a few travel-related questions and review the agent’s responses.
+1. エージェントとの対話を開始します。旅行関連の質問をいくつか尋ね、エージェントの応答を確認します。
 
 <validation step="93a6c432-2df0-4b2a-bea2-658266d0ac58" />
  
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+> **おめでとうございます!** タスクが完了しました。次に検証します。手順は以下の通りです:
+> - 対応するタスクの Validate ボタンをクリックします。成功メッセージが表示されたら、次のタスクに進んでください。 
+> - 表示されない場合は、エラー メッセージを注意深く読み、ラボ ガイドの手順に従ってステップを再試行してください。
+> - サポートが必要な場合は、cloudlabs-support@spektrasystems.com までお問い合わせください。24/7 でお手伝いします。
 
-## Summary
+## まとめ
 
-You've successfully:
+正常に完了しました:
 
-- Imported data tables and navigated to Copilot Studio
-- Created a working Safe Travels agent using Microsoft's template
-- Tested the agent's travel assistance capabilities with real queries
-- Published and deployed the agent to Microsoft Teams for your organization
+- データ テーブルをインポートし、Copilot Studio に移動しました
+- Microsoft のテンプレートを使用して動作する Safe Travels エージェントを作成しました
+- エージェントの旅行支援機能を実際のクエリでテストしました
+- エージェントを公開し、組織の Microsoft Teams に展開しました
 
-Your Safe Travels agent is now live and ready to help employees with travel questions, passport information, and destination guidance. You've experienced the power of low-code AI development - creating enterprise-ready conversational agents without any programming.
+Safe Travels エージェントは現在ライブで、従業員の旅行質問、パスポート情報、目的地ガイダンスを支援する準備ができています。プログラミングなしでエンタープライズ対応の会話型 AI エージェントを作成するローコード AI 開発の力を体験しました。
 
-### You have successfully completed Exercise 1. Click **Next >>** to continue to Exercise 2.
+### 演習 1 を正常に完了しました。**Next >>** をクリックして演習 2 に進んでください。
+
