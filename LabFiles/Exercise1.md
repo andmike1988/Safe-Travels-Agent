@@ -1,50 +1,50 @@
-# Exercise 1: Create Safe Travels Agent and Deploy to Microsoft Teams
+# 演習 1: Safe Travels エージェントを作成して Microsoft Teams に展開する
 
-### Estimated Duration: 30 Minutes
+### 推定所要時間: 30 分
 
-## Overview
+## 概要
 
-In this foundational exercise, you'll create your first AI agent using Microsoft Copilot Studio's Safe Travels template. This is a practical, hands-on introduction to conversational AI that will give you a working travel assistant agent deployed to Microsoft Teams.
+この基礎演習では、Microsoft Copilot Studio の Safe Travels テンプレートを使用して最初の AI エージェントを作成します。これは実践的なハンズオンの導入であり、Microsoft Teams に展開された動作する旅行アシスタント エージェントが得られます。
 
-The Safe Travels agent will help employees with travel-related questions, policy information, and guidance. You'll see how easy it is to create powerful AI agents using templates, test them thoroughly, and deploy them to your organization's collaboration platform. This exercise focuses on getting you comfortable with the core agent development workflow that applies to any business scenario.
+Safe Travels エージェントは、従業員の旅行関連の質問、ポリシー情報、およびガイダンスを支援します。テンプレートを使用することで、強力な AI エージェントを簡単に作成できることを実感できます。この演習は、あらゆるビジネス シナリオに適用できるコアなエージェント開発のワークフローに慣れることに重点を置いています。
 
-## Objectives
+## 目的
 
-You will complete the following tasks:
+次のタスクを完了します:
 
-- Task 1: Import data tables and navigate to Copilot Studio
-- Task 2: Create Safe Travels agent from template  
-- Task 3: Test and validate agent functionality
-- Task 4: Publish and deploy agent to Microsoft Teams
+- タスク 1: データ テーブルをインポートし、Copilot Studio に移動する
+- タスク 2: テンプレートから Safe Travels エージェントを作成する  
+- タスク 3: エージェントの機能をテストして検証する
+- タスク 4: Microsoft Teams にエージェントを公開して展開する
 
-## Task 1: Import Data Tables and Navigate to Copilot Studio
+## タスク 1: データ テーブルのインポートと Copilot Studio への移動
 
-In this task, you will import the required data tables into your Power Platform environment and navigate to Copilot Studio to begin building your agents.
+このタスクでは、必要なデータ テーブルを Power Platform 環境にインポートし、エージェントの作成を開始するために Copilot Studio に移動します。
 
-1. Navigate back to the Power Apps portal, and please switch to the environment that you created earlier.
+1. Power Apps ポータルに戻り、前に作成した環境に切り替えます。
 
    ![](../media/papps1.png)
 
-1. Once done, select **Tables (1)** from the left menu and click on **Create with Excel or .CSV file (2)**.
+1. 完了したら、左メニューから **Tables (1)** を選択し、**Create with Excel or .CSV file (2)** をクリックします。
 
    ![](../media/leav-man-e1-g-2.png)
 
-   > **Note:** If prompted with a permission message stating you don’t have access, click on **Switch and create**.
+   > **注意:** アクセス権がない旨のメッセージが表示された場合は、**Switch and create** をクリックします。
 
    ![](../media/saf-tra-cor-v2-g1.png)
 
-   > **Note:** If you are directly taken to the **Upload an Excel file** screen, click **Cancel** to return.
+   > **注意:** 直接 **Upload an Excel file** 画面に移動した場合は、**Cancel** をクリックして戻ります。
 
    ![](../media/saf-tra-cor-v2-g2.png)
 
-1. In the next pane, click on **Select from device** and in the pop-up window, select files.
+1. 次のペインで **Select from device** をクリックし、ポップアップ ウィンドウでファイルを選択します。
 
    ![](../media/ex2img11.png)
 
-1. In the file picker dialog:
-   - Navigate to **`C:\datasets\Safe-Travels-Agent-Automate`(1)**.
-   - Select **Leave balance Tracker.xlsx (2)**.
-   - Click **Open (3)** to add the file.
+1. ファイル ピッカー ダイアログで:
+   - **`C:\datasets\Safe-Travels-Agent-Automate`(1)** に移動します。
+   - **Leave balance Tracker.xlsx (2)** を選択します。
+   - **Open (3)** をクリックしてファイルを追加します。
 
       ![](../media/cor-g-g1.png)
 
