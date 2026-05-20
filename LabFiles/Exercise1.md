@@ -272,13 +272,13 @@ Safe Travels エージェントは、出張関連の質問、ポリシー情報�
 
    - **メール アドレス/ユーザー名:** <inject key="AzureAdUserEmail"></inject>
 
-      ![](../media/ex1-travel-g24.png)
+      ![](../media/gs-lab3-g2.png)
 
 1. **一時アクセス パス (1)** を入力し、**[サインイン (2)]** をクリックします。
 
    - **一時アクセス パス:** <inject key="AzureAdUserPassword"></inject>
 
-      ![](../media/ex1-travel-g25.png)
+      ![](../media/gs-lab3-g3.png)
 
 1. 「Teams の使い方を学ぶ」ようこそ画面が表示された場合は、**[はじめる]** をクリックして続行します。
 
@@ -317,10 +317,6 @@ Safe Travels エージェントは、出張関連の質問、ポリシー情報�
 1. インストールが正常に完了すると、確認メッセージが表示されます。**[開く]** をクリックして Safe Travels Agent をすぐに使い始めましょう。
 
    ![](../media/ex1-travel-g36.png)
-
-1. Safe Travels Agent のチャット インターフェースが開きます。テキスト ボックス (1) に最初のメッセージを入力し、**[送信]** ボタン (2) をクリックしてエージェントをテストします。
-
-   ![](../media/ex1-travel-g39.png)
 
 1. **Safe Travels Agent** のチャット インターフェースが開きます。テキスト ボックス **(1)** にメッセージを入力し、**[送信]** ボタン **(2)** をクリックします。
 

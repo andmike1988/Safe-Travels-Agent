@@ -40,7 +40,7 @@
 
    ![Team Details](../media/ex2-travel-g3.png)
 
-1. **Copilot Studio** に戻り、左メニューから **[フロー (1)]** を選択して、**[新しいエージェント フロー (2)]** をクリックして新しい自動化ワークフローを作成します。
+1. Copilot Studio に戻り、左メニューから **[ホーム (1)]** を選択します。次に、**[ワークフローの作成 (2)]** をクリックして、新しい自動化ワークフローを作成します。
 
    ![Skip Members](../media/saf-tra-cor-v2-g16.png)
 
@@ -80,7 +80,7 @@
 
    ![Employee ID Input](../media/saf-tra-cor-v2-g20.png)
 
-1. テキスト ボックスに **[チャットまたはチャネルにメッセージを投稿 (1)]** と入力して Microsoft Teams 統合を検索し、利用可能な Microsoft Teams アクションから選択します **(2)**。
+1. テキスト ボックスに **[チャットまたはチャネルにメッセージを投稿する (1)]** と入力して Microsoft Teams 統合を検索し、利用可能な Microsoft Teams アクションから選択します **(2)**。
 
    ![Add Second Input](../media/ex2-travel-g12.png)
 
@@ -88,7 +88,7 @@
 
    ![Purpose Input](../media/ex2-travel-g13.png)
 
-1. **ODL_User (1)** アカウントの資格情報を選択して認証し、Microsoft Teams 接続を確立します。
+1. **ODL_User** アカウントの資格情報を選択して認証し、Microsoft Teams 接続を確立します。
 
    ![Add Action](../media/ex2-travel-g14.png)
 
@@ -100,8 +100,8 @@
 
    | 項目 | 値 |
    |-----|-------|
-   | Post as **(1)** | Flow bot |
-   | Post in **(2)** | Channel |
+   | Post as **(1)** | フロー ボット |
+   | Post in **(2)** | チャネル |
    | Team **(3)** | HR Team |
    | Channel **(4)** | Travel Approvals |
    | Message **(5)** | `Travel request from Employee ID: [Employee ID], Purpose: [Purpose]` |
@@ -130,11 +130,11 @@
 
    ![Message Configuration](../media/saf-tra-cor-v2-g21.png)
 
-1. **[エージェントへの応答]** アクションの下の **[出力の追加 (1)]** をクリックして、返答メッセージを定義します。
+1. **[エージェントへの応答]** アクションの下の **[出力の追加 ]** をクリックして、返答メッセージを定義します。
 
    ![Dynamic Content](../media/ex2-travel-g21.png)
 
-1. エージェントへの応答の出力タイプとして **[テキスト (1)]** を選択します。
+1. エージェントへの応答の出力タイプとして **[テキスト]** を選択します。
 
    ![Parameters Complete](../media/ex2-travel-g22.png)
 
@@ -148,7 +148,11 @@
 
    ![Close Parameters](../media/ex2-travel-g23.png)
 
-1. **[下書きの保存 (1)]** をクリックして、現在のフロー設定を公開前に保存します。
+1. 左側の **Travel Approval Flow** をフロー名として入力します。 
+
+   ![Close Parameters](../media/ex2-travel-g23(a).png)
+
+1. **[下書きの保存]** をクリックして、現在のフロー設定を公開前に保存します。
 
    ![Add Second Action](../media/ex2-travel-g24.png)
 
@@ -159,14 +163,6 @@
 1. **[公開]** をクリックして、エージェント フローを使用可能にします。
 
    ![Configure Output](../media/ex2-travel-g26.png)
-
-1. **[概要 (1)]** タブに移動し、**[編集 (2)]** をクリックしてエージェント フローの詳細を変更します。
-
-   ![Publish Flow](../media/ex2-travel-g28.png)
-
-1. フロー名として **Travel Approval Flow (1)** を入力し、**[保存 (2)]** をクリックして変更を適用します。
-
-   ![Flow Published](../media/ex2-travel-g29.png)
 
 <validation step="79aacbd4-3125-426d-8b4f-fc9a29efaa87" />
  
@@ -179,7 +175,7 @@
 
 このタスクでは、公開されたフローを Safe Travels エージェントの新しいトピックに接続し、変数をマッピングして更新を公開し、Teams での検証を含むエンドツーエンドの実行をテストします。
 
-1. **Copilot Studio** で **Safe Travels Agent** を開き、ドロップダウン メニューから **[トピック (1)]** を選択します。
+1. **Copilot Studio** で **Safe Travels Agent** を開き、ドロップダウン メニューから **[トピック]** を選択します。
 
    ![Overview Tab](../media/ex2-travel-g30.png)
 
@@ -240,6 +236,8 @@
 
 1. **[概要 (1)]** タブに移動し、**[公開 (2)]** をクリックしてエージェントの更新を反映させます。
 
+   ![Teams Notification](../media/ex2-travel-g56(a).png) 
+
 1. **[このエージェントを公開]** ダイアログ ボックスで、**[公開]** をクリックして確定し、エージェントを展開します。
 
    ![Teams Notification](../media/saf-tra-cor-v2-g22.png)
@@ -294,7 +292,7 @@
 
 このタスクでは、分散 AI システムの強みを学びます。専門化されたエージェントが特定のビジネス ドメインを担当しながら、インテリジェントなルーティングと連携を通じて統一されたユーザー エクスペリエンスを維持します。
 
-1. 左メニューから **[エージェント]** を選択して、**Leave Manager エージェント**に移動します。
+1. 左メニューから **[エージェント (1)]** を選択して、**Leave Manager Agent(2)** に移動します。
 
    ![](../media/sfimg11.png)
 
@@ -315,7 +313,7 @@
 
    ![](../media/ex2-travel-g80.png)
 
-1. トピック フローを確認し、**メッセージ** ノードのメニューで **[...]** をクリックして **[削除]** を選択します。
+1. トピック フローを確認し、**メッセージ** ノードのメニューで **[...] (1)** をクリックして **[削除] (2)** を選択します。
 
    ![](../media/sfimg17.png)
 
@@ -323,7 +321,7 @@
 
    ![](../media/sfimg18.png)
 
-1. 一覧から **[詳細設定]** を選択し、**[生成型の回答]** をクリックします。
+1. 一覧から **[詳細] (1)** を選択し、**[生成応答] (2)** をクリックします。
 
    ![](../media/sfimg19.png)
 
@@ -367,21 +365,23 @@
 
    ![](../media/ex2-travel-g85.png)
 
-1. Leave Manager エージェントが、従業員 ID 1234 (John Doe) の休暇残高が **2 日**であることを表示することを確認します **(1)**。これは、専門化されたエージェントがシームレスに連携するマルチエージェント オーケストレーションの実際の動作を示しています。
+1. Leave Manager エージェントが、従業員 ID 1234 (John Doe) の休暇残高が **2 日**であることを表示することを確認します。これは、専門化されたエージェントがシームレスに連携するマルチエージェント オーケストレーションの実際の動作を示しています。
 
    ![](../media/sfimg13.png)
 
 1. **[公開 (1)]** をクリックしてエージェントを公開します。
 
+   ![](../media/sfimg13(a).png)
+
 1. ダイアログ ボックスで再度 **[公開]** をクリックします。
 
-   ![](../media/sfimg8.png)
+   ![](../media/sfimg8(a).png)
 
-1. 公開が完了したら、**Safe Travels Agent** に戻ります。
+1. 公開が完了したら、**[エージェント (1)]** をクリックし、**[Safe Travels Agent (2)]** に戻ります。
 
-   ![](../media/saf-tra-cor-v2-g14.png)
+   ![](../media/saf-tra-cor-v2-g14(a).png)
 
-1. **[+5 (1)]** メニューをクリックして追加オプションにアクセスします。**[エージェント (2)]** を選択して、エージェントの管理またはトピック、アクティビティ、分析、チャネルなどの他の機能にアクセスします。
+1. 。**[エージェント (1)]** を選択して、エージェントの管理またはトピック、アクティビティ、分析、チャネルなどの他の機能にアクセスします。
 
    ![](../media/ex2-travel-g95.png)
 
@@ -417,7 +417,7 @@
 
    ![](../media/ex2-travel-g110.png)
 
-1. エージェント一覧から **[Safe Travels Agent (2)]** に戻ります。
+1. **[エージェント (1)]** をクリックし、エージェント一覧から **[Safe Travels Agent (2)]** に戻ります。
 
    ![](../media/ex2-travel-g111.png)
 
@@ -445,7 +445,7 @@
    1234
    ```
 
-   ![](../media/ex2-travel-g85.png)
+   ![](../media/ex2-travel-g85(a).png)
 
    > **マルチエージェントの成功:** Safe Travels エージェントと Leave Manager エージェント間のシームレスなハンドオフは、オーケストレーションが成功したことを示しており、専門化されたエージェントが連携して包括的なビジネス ソリューションを提供しています。
 
